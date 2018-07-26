@@ -71,6 +71,7 @@ public class ServiceFilter {
 				if(currentNode.isEnd) {
 					begin = position;
 					sb.append("xxx");
+					currentNode = rootNode;
 				}
 				
 			}
