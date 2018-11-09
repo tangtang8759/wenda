@@ -46,6 +46,7 @@ public class Main {
 			public int compare(String o1, String o2) {
 				
 				return 0;
+				
 			}
 			
 		});
@@ -70,7 +71,7 @@ public class Main {
 		System.out.println("helloworld");
 		
 		
-		HeapSort heapSort = new HeapSort(100);
+		Heap heapSort = new Heap(100);
 		heapSort.insert(5);
 		heapSort.insert(10);
 		heapSort.insert(8);
@@ -81,8 +82,8 @@ public class Main {
 			System.out.println(heapSort.extractMax());
 		}
 		
-		Character c = '类';
-		System.out.println(c.toString());
+		Character c = ' ';
+		System.out.println(c==' ');
 		HashMap<String, String> map = new HashMap<>();
 		map.put("a", "A");
 		System.out.println(map.get("b"));
@@ -91,8 +92,10 @@ public class Main {
 		filter.addWord("abc");
 		filter.addWord("ag");
 		filter.addWord("bf");
-		System.out.println(filter.filter("abagfffabcdddbfbbf"));//
+		System.out.println(filter.filter(" a bf  cbff"));//
+		String content="  abc ddf";
 		
+		System.out.println(content.replaceAll("abc", "xxx"));
 	}
 
 }

@@ -56,8 +56,17 @@ public class ServiceFilter {
 		Character tempC;
 		TreeNode tempNode;
 		while(begin < text.length()) {
-			
+
 			tempC=text.charAt(position);
+			if(tempC==' ') {
+				if(currentNode == rootNode) {
+					sb.append(tempC);
+					begin++;
+				}
+				position++;
+				continue;
+			}
+			
 			tempNode = currentNode.getSubNode(tempC);
 			if(tempNode==null) {
 				sb.append(text.charAt(begin));
@@ -72,7 +81,7 @@ public class ServiceFilter {
 					begin = position;
 					sb.append("xxx");
 					currentNode = rootNode;
-				}
+				} 
 				
 			}
 			

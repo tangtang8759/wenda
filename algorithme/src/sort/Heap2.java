@@ -1,11 +1,11 @@
 package sort;
 
-public class HeapSort {
+public class Heap2 {
 	
 	private int[] arrays;
 	private int count;
 	
-	public HeapSort(int n) {
+	public Heap2(int n) {
 		arrays = new int[n+1];
 		count=0;
 	}
